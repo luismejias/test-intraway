@@ -1,1 +1,188 @@
 /* You can add global styles to this file, and also import other style files */
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ @import "./grilla-breakpoint.scss";
+
+ .contentDiv{
+  display:inline-block; 
+  vertical-align: top;
+  width: 85%;//79%;
+  padding-left: 1%;
+  padding-right: 1%;
+  min-height: calc(100vh - 58px);
+   @media only screen and (min-width: $break-md) and (max-width : 1064px) {
+      width: 80%;       
+  }
+  @media only screen and (max-width : $break-md) {
+      display:block !important;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+ body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f3ef;
+    //background-image: url("./assets/img/4.jpeg");
+    background-position: center center;
+  }
+  #page-content-wrapper {
+    background-color: #f4f3ef;
+   
+}
+.container-fluid { 
+  margin-top: 44px;
+}
+.caja-centrada{
+  max-width: 750px ;
+  margin:auto;
+}
+  .bg-sidebar {
+    background-color:#808080!important;
+}  
+.bg-header {
+  background-color:	#A9A9A9!important;
+  padding:10px;
+} 
+.bg-footer {
+    background-color:#A9A9A9!important;
+    padding:10px;
+  }
+.title{
+  font-size: 34px;
+  color: rgb(7, 3, 54);
+ }
+
+ .text-footer{
+    font-size: 34px;
+    color: rgb(7, 3, 54);
+ }
+.caja-title{
+  margin-top: 24px;
+  margin-left: 15px;
+  border-left:#51a1c4 10px solid;
+}
+.caja-title-modal{
+  border-left:#51a1c4 10px solid;
+}
+
+.list-group-item.active {  
+  background-color:#343a40!important;
+  border-color: #51a1c4 !important;
+}
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    height: 100%;
+  }
+  .card{
+    border-radius: 10px!important;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  .cabecera{
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .card-header {
+    background-color: #51a1c4 !important;
+    
+ }
+
+
+  .cabecera-form{
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 24px;   
+    text-align: center;
+  }
+  .text-14{
+    font-weight: normal;
+    font-family: roboto;
+    font-size: 14px;    
+  }
+  .text-24{
+    font-weight: normal;
+    font-family: roboto;
+    font-size: 24px;
+    color:darkblue;   
+  }
+
+  .text-24-subtitle{
+    font-weight: bold;
+    font-family: roboto;
+    font-size: 24px;
+    color:grey;   
+  }
+
+  .text-18-gris{
+    font-weight: normal;
+    font-family: roboto;
+    font-size: 18px;
+    color:#000000;
+    text-align: left;   
+  }
+
+  .tabla{
+    padding:0px 25px;
+    align-items: center;
+  }
+  
+.caja-text-child{
+  padding: 24px;
+  background-color: #4682B4;
+  border-radius: 10px;
+  border:1px solid;
+  margin: 24px;
+}
+
+.caja-productos{
+  padding: 10px;
+  background-color: silver;
+  border:1px solid;
+  margin: 2px;
+}

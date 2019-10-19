@@ -1,0 +1,15 @@
+<div class="container table">
+    <div class="row  table-dark card-header">
+        <div class="col-3"><b>ID</b></div>
+        <div class="col-3"><b>Name</b></div>
+        <div class="col-3"><b>Type</b></div>
+        <div class="col-3"><b>Value</b></div>
+    </div>
+
+    <div class="row caja-productos" *ngFor="let item of productos">
+        <div class="col-3">{{item.id}}</div>
+        <div class="col-3">{{item.name}}</div>
+        <div class="col-3">{{item.type}}</div>
+        <div class="col-3">{{item.value}}</div>
+    </div>
+</div>
